@@ -1,3 +1,15 @@
 {
-  "extends": "@repo/typescript-config/base.json"
+  "compilerOptions": {
+    "paths": {
+      "@web/*": [
+        "./web/src/app/*"
+      ],
+      "@ui/*": [
+        "./web/src/ui/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
